@@ -12,7 +12,7 @@ npm install egg-compress
 
 ```js
 // config/plugin.js
-exports.index = {
+exports.compress = {
   enable: true,
   package: 'egg-compress',
 };
