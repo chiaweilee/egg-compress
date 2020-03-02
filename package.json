@@ -1,0 +1,33 @@
+{
+  "name": "egg-compress",
+  "version": "0.0.0-beta.1",
+  "description": "Compress plugin for egg.js",
+  "eggPlugin": {
+    "name": "compress"
+  },
+  "keywords": [
+    "egg",
+    "eggPlugin",
+    "egg-plugin"
+  ],
+  "dependencies": {
+    "koa-compress": "^3.0.0"
+  },
+  "devDependencies": {
+    "egg": "^2.16.0",
+    "egg-bin": "^4.11.0",
+    "eslint": "^5.13.0",
+    "eslint-config-egg": "^7.1.0"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "files": [
+    "app.js",
+    "agent.js",
+    "config",
+    "app"
+  ],
+  "author": "+v",
+  "license": "MIT"
+}
