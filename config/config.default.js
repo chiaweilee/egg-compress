@@ -1,5 +1,3 @@
 'use strict';
 
-exports.compress = {
-  threshold: 2048,
-};
+exports.compress = {};

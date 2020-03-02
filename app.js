@@ -1,11 +1,15 @@
 'use strict';
 
-module.exports = app => {
-  const index = app.config.coreMiddleware.indexOf('static');
-  if (index === -1) {
-    app.config.coreMiddleware.push('static');
-  } else {
-    app.config.coreMiddleware.splice(index, 0, 'compress');
+module.exports = class {
+  constructor(app) {
+    this.app = app;
   }
-  app.config.coreMiddleware.unshift('compress');
+
+  async configDidLoad() {
+    this.app.config.coreMiddleware.splice(
+        this.app.config.coreMiddleware.indexOf('static'),
+        0,
+        'compress'
+    );
+  }
 };
